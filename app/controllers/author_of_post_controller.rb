@@ -1,0 +1,2 @@
+class AuthorOfPostController < ApplicationController
+end

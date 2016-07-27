@@ -1,5 +1,5 @@
 module PostsHelper
 
-<%= asset_path('logo.png') %>
+asset_path 'logo.png'
 
 end

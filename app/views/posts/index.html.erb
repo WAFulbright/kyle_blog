@@ -1,6 +1,12 @@
 <% @posts.each do |post| %>
-  <h2><%= post.title %></h2>
-<div><% truncate(post.body, :length => 250)  %></div>
-<br>
-<%= link_to "Read Post", post %>
+  <br>
+  <b>Title:</b> <%= post.title %>
+  <br>
+  <b>Body:</b> <%= truncate(post.body, :length => 250) %>
+  <br>
+  <b>Author:</b> <%= post.author %>
+  <br>
+<b><%= link_to "Read Post", post %>
+<br><br>
+<%= link_to "New Post", new_post_path %></b>
 <% end %>
